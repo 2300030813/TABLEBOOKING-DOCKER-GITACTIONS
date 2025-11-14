@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: ./BACKEND/BOOKINGAPI-SPRINGBOOT
-          file: ./BOOKING/BOOKINGAPI-SPRINGBOOT/backend.Dockerfile
+          file: ./BACKEND/BOOKINGAPI-SPRINGBOOT/backend.Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/tablebooking-docker-gitactions-backend:latest
 
